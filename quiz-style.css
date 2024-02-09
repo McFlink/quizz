@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(background.jfif);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: Arial;
+}
+header {
+    display: inline-block;
+    border: 30px dotted white;
+    color: white;
+    font-size: 50px;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.try-this-quiz h2 {
+    color: white;
+    font-style: italic;
+    font-size: 35px;
+    margin-top: 70px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.question {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 20px;
+    padding: 7px;
+
+}
+
+main {
+    max-width: 70%;
+    margin: auto;
+    border-top: 1px solid #d4d1d1;
+}
+
+.container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "options-1 options-2",
+    "options-3 options-4"
+}
+
+.container button {
+    padding: 15px 10px;
+    border-radius: 18px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container button:hover {
+    background-color: #d3d3d3;;
+}
+
+#next-question-btn {
+    display: none;
+    margin: auto;
+    margin-top: 30px;
+    font-family: segoe UI;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background: yellow;
+}
+
+#done-playing-btn {
+    display: none;
+    margin: auto;
+    margin-top: 30px;
+    font-family: segoe UI;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 7px;
+    background: orangered;
+    color: white;
+}
+
+h4 {
+    margin: 30px;
+    font-size: 20px;
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .last-question {
+    display: inline-block;
+    margin-top: 70px;
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border: 1px dashed #fc7c05;
+    border-radius: 5px;
+    padding: 5px 40px;
+    background-color: #fc7c05;
+    animation: blink 1.5s infinite; /* Fixa stavfelet här */
+}
+
+#play-again-btn {
+    margin-top: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px 100px;
+    border-radius: 25px;
+    background-color: #061777;;
+    border: none;
+}
+
+p.show-result {
+    display: block;
+    width: 20%;
+    margin: auto;
+    color: green;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 80px;
+    background-color: white;
+    border-radius: 15px;
+}
