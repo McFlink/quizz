@@ -177,4 +177,13 @@ p.show-result {
         margin-top: 2px;
         gap: 15px;
     }
+
+    h4 {
+        color: white;
+    }
+
+    p.show-result {
+        width: 50%;
+        font-size: 25px;
+    }
 }
